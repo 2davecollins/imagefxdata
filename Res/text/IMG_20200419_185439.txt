@@ -1,0 +1,12 @@
+IMG_20200419_185439
+DateTime: '2020:04:19 18:54:41'
+DateTimeOriginal: '2020:04:19 18:54:41'
+DateTimeDigitized: '2020:04:19 18:54:41'
+PhotographicSensitivity: 130
+ShutterSpeedValue: -590/100 (-5.9)
+ApertureValue: 2
+BrightnessValue: 0
+GPSLatitudeRef: 'N'
+GPSLatitude: 53, 19, 1053/100 (10.53)
+GPSLongitudeRef: 'W'
+GPSLongitude: 6, 18, 3234/100 (32.34)

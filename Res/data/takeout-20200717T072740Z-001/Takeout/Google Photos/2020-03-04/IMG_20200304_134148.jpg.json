@@ -1,0 +1,31 @@
+{
+  "title": "IMG_20200304_134148.jpg",
+  "description": "",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1583336450",
+    "formatted": "Mar 4, 2020, 3:40:50 PM UTC"
+  },
+  "modificationTime": {
+    "timestamp": "1586760071",
+    "formatted": "Apr 13, 2020, 6:41:11 AM UTC"
+  },
+  "geoData": {
+    "latitude": 53.34477777777778,
+    "longitude": -6.233402777777778,
+    "altitude": 60.19,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 53.34477777777778,
+    "longitude": -6.233402777777778,
+    "altitude": 60.19,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "photoTakenTime": {
+    "timestamp": "1583329310",
+    "formatted": "Mar 4, 2020, 1:41:50 PM UTC"
+  }
+}

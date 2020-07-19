@@ -1,0 +1,12 @@
+IMG_20200405_131350
+DateTime: '2020:04:05 13:13:52'
+DateTimeOriginal: '2020:04:05 13:13:52'
+DateTimeDigitized: '2020:04:05 13:13:52'
+PhotographicSensitivity: 60
+ShutterSpeedValue: -940/100 (-9.4)
+ApertureValue: 2
+BrightnessValue: 0
+GPSLatitudeRef: 'N'
+GPSLatitude: 53, 19, 907/100 (9.07)
+GPSLongitudeRef: 'W'
+GPSLongitude: 6, 18, 5467/100 (54.67)

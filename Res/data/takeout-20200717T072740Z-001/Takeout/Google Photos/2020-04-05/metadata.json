@@ -1,0 +1,19 @@
+{
+  "albumData": {
+    "title": "2020/04/05",
+    "description": "Album for automatically uploaded content from cameras and mobile devices",
+    "access": "protected",
+    "location": "",
+    "date": {
+      "timestamp": "1586088832",
+      "formatted": "Apr 5, 2020, 12:13:52 PM UTC"
+    },
+    "geoData": {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": 0.0,
+      "latitudeSpan": 0.0,
+      "longitudeSpan": 0.0
+    }
+  }
+}

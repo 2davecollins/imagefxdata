@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.201" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.davec.imagefxdata.DetailController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="60.0" layoutY="36.0" prefHeight="325.0" prefWidth="479.0">
+         <children>
+            <Label id="dl_title" fx:id="dl_title" contentDisplay="CENTER" text="img" />
+            <Label id="dl_error" fx:id="dl_error" text="Label" />
+            <TextArea id="dl_data" fx:id="dl_data" prefHeight="400.0" prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="479.0" spacing="30.0">
+               <children>
+                  <Button id="btnLogOff" fx:id="btnLogOff" mnemonicParsing="false" onAction="#switchOff" text="Quit" />
+                  <Button id="btnBack" fx:id="btnBack" mnemonicParsing="false" onAction="#switchBack" text="Back" />
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

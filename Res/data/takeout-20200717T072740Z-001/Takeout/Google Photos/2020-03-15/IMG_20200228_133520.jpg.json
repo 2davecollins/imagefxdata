@@ -1,0 +1,31 @@
+{
+  "title": "IMG_20200228_133520.jpg",
+  "description": "",
+  "imageViews": "1693",
+  "creationTime": {
+    "timestamp": "1584289846",
+    "formatted": "Mar 15, 2020, 4:30:46 PM UTC"
+  },
+  "modificationTime": {
+    "timestamp": "1584497856",
+    "formatted": "Mar 18, 2020, 2:17:36 AM UTC"
+  },
+  "geoData": {
+    "latitude": 53.351518399999996,
+    "longitude": -6.2504053,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 53.35149166666667,
+    "longitude": -6.250408333333334,
+    "altitude": 59.59,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "photoTakenTime": {
+    "timestamp": "1582896922",
+    "formatted": "Feb 28, 2020, 1:35:22 PM UTC"
+  }
+}

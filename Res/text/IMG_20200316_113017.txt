@@ -1,0 +1,8 @@
+IMG_20200316_113017
+DateTime: '2020:03:16 11:30:18'
+DateTimeOriginal: '2020:03:16 11:30:18'
+DateTimeDigitized: '2020:03:16 11:30:18'
+PhotographicSensitivity: 60
+ShutterSpeedValue: -707/100 (-7.07)
+ApertureValue: 2
+BrightnessValue: 0

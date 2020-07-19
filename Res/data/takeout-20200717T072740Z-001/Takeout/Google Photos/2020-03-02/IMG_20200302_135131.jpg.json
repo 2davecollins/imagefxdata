@@ -1,0 +1,31 @@
+{
+  "title": "IMG_20200302_135131.jpg",
+  "description": "",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1583160430",
+    "formatted": "Mar 2, 2020, 2:47:10 PM UTC"
+  },
+  "modificationTime": {
+    "timestamp": "1584854886",
+    "formatted": "Mar 22, 2020, 5:28:06 AM UTC"
+  },
+  "geoData": {
+    "latitude": 53.345169444444444,
+    "longitude": -6.231133333333333,
+    "altitude": 60.79,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 53.345169444444444,
+    "longitude": -6.231133333333333,
+    "altitude": 60.79,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "photoTakenTime": {
+    "timestamp": "1583157093",
+    "formatted": "Mar 2, 2020, 1:51:33 PM UTC"
+  }
+}

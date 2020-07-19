@@ -1,0 +1,12 @@
+IMG_20200331_133155
+DateTime: '2020:03:31 13:31:58'
+DateTimeOriginal: '2020:03:31 13:31:58'
+DateTimeDigitized: '2020:03:31 13:31:58'
+PhotographicSensitivity: 60
+ShutterSpeedValue: -859/100 (-8.59)
+ApertureValue: 2
+BrightnessValue: 0
+GPSLatitudeRef: 'N'
+GPSLatitude: 53, 19, 2132/100 (21.32)
+GPSLongitudeRef: 'W'
+GPSLongitude: 6, 19, 1534/100 (15.34)

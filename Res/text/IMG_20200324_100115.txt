@@ -1,0 +1,12 @@
+IMG_20200324_100115
+DateTime: '2020:03:24 10:01:16'
+DateTimeOriginal: '2020:03:24 10:01:16'
+DateTimeDigitized: '2020:03:24 10:01:16'
+PhotographicSensitivity: 264
+ShutterSpeedValue: -532/100 (-5.32)
+ApertureValue: 2
+BrightnessValue: 0
+GPSLatitudeRef: 'N'
+GPSLatitude: 53, 18, 5537/100 (55.37)
+GPSLongitudeRef: 'W'
+GPSLongitude: 6, 19, 575/100 (5.75)

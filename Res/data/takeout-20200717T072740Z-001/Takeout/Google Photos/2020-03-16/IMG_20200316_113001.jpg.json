@@ -1,0 +1,31 @@
+{
+  "title": "IMG_20200316_113001.jpg",
+  "description": "",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1584358661",
+    "formatted": "Mar 16, 2020, 11:37:41 AM UTC"
+  },
+  "modificationTime": {
+    "timestamp": "1585911653",
+    "formatted": "Apr 3, 2020, 11:00:53 AM UTC"
+  },
+  "geoData": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "photoTakenTime": {
+    "timestamp": "1584358203",
+    "formatted": "Mar 16, 2020, 11:30:03 AM UTC"
+  }
+}

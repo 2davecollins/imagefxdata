@@ -1,0 +1,31 @@
+{
+  "title": "IMG_20200302_134306.jpg",
+  "description": "",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1583160427",
+    "formatted": "Mar 2, 2020, 2:47:07 PM UTC"
+  },
+  "modificationTime": {
+    "timestamp": "1584854886",
+    "formatted": "Mar 22, 2020, 5:28:06 AM UTC"
+  },
+  "geoData": {
+    "latitude": 53.345175000000005,
+    "longitude": -6.231141666666667,
+    "altitude": 60.59,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 53.345175000000005,
+    "longitude": -6.231141666666667,
+    "altitude": 60.59,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "photoTakenTime": {
+    "timestamp": "1583156587",
+    "formatted": "Mar 2, 2020, 1:43:07 PM UTC"
+  }
+}

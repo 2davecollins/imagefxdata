@@ -1,0 +1,31 @@
+{
+  "title": "IMG_20200419_185323.jpg",
+  "description": "",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1587318974",
+    "formatted": "Apr 19, 2020, 5:56:14 PM UTC"
+  },
+  "modificationTime": {
+    "timestamp": "1589045983",
+    "formatted": "May 9, 2020, 5:39:43 PM UTC"
+  },
+  "geoData": {
+    "latitude": 53.31936944444445,
+    "longitude": -6.3091027777777775,
+    "altitude": 106.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 53.31936944444445,
+    "longitude": -6.3091027777777775,
+    "altitude": 106.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "photoTakenTime": {
+    "timestamp": "1587318804",
+    "formatted": "Apr 19, 2020, 5:53:24 PM UTC"
+  }
+}

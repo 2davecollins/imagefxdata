@@ -1,0 +1,31 @@
+{
+  "title": "IMG_20200331_114625.jpg",
+  "description": "",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1585660128",
+    "formatted": "Mar 31, 2020, 1:08:48 PM UTC"
+  },
+  "modificationTime": {
+    "timestamp": "1585980770",
+    "formatted": "Apr 4, 2020, 6:12:50 AM UTC"
+  },
+  "geoData": {
+    "latitude": 53.317397222222226,
+    "longitude": -6.333527777777777,
+    "altitude": 105.09,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 53.317397222222226,
+    "longitude": -6.333527777777777,
+    "altitude": 105.09,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "photoTakenTime": {
+    "timestamp": "1585651587",
+    "formatted": "Mar 31, 2020, 10:46:27 AM UTC"
+  }
+}

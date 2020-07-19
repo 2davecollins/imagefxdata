@@ -1,0 +1,32 @@
+{
+  "title": "IMG_20200309_141559.jpg",
+  "description": "",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1583764594",
+    "formatted": "Mar 9, 2020, 2:36:34 PM UTC"
+  },
+  "modificationTime": {
+    "timestamp": "1594969451",
+    "formatted": "Jul 17, 2020, 7:04:11 AM UTC"
+  },
+  "geoData": {
+    "latitude": 53.34519166666667,
+    "longitude": -6.231116666666667,
+    "altitude": 66.5,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 53.34519166666667,
+    "longitude": -6.231116666666667,
+    "altitude": 66.5,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "photoTakenTime": {
+    "timestamp": "1583763360",
+    "formatted": "Mar 9, 2020, 2:16:00 PM UTC"
+  },
+  "trashed": true
+}

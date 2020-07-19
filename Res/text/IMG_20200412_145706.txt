@@ -1,0 +1,12 @@
+IMG_20200412_145706
+DateTime: '2020:04:12 14:57:07'
+DateTimeOriginal: '2020:04:12 14:57:07'
+DateTimeDigitized: '2020:04:12 14:57:07'
+PhotographicSensitivity: 927
+ShutterSpeedValue: 521/100 (5.21)
+ApertureValue: 2
+BrightnessValue: -101/100 (-1.01)
+GPSLatitudeRef: 'N'
+GPSLatitude: 53, 19, 1018/100 (10.18)
+GPSLongitudeRef: 'W'
+GPSLongitude: 6, 18, 3315/100 (33.15)

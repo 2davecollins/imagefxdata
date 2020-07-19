@@ -1,0 +1,19 @@
+{
+  "albumData": {
+    "title": "2020-02-29",
+    "description": "",
+    "access": "public",
+    "location": "",
+    "date": {
+      "timestamp": "1582963851",
+      "formatted": "Feb 29, 2020, 8:10:51 AM UTC"
+    },
+    "geoData": {
+      "latitude": 0.0,
+      "longitude": 0.0,
+      "altitude": 0.0,
+      "latitudeSpan": 0.0,
+      "longitudeSpan": 0.0
+    }
+  }
+}

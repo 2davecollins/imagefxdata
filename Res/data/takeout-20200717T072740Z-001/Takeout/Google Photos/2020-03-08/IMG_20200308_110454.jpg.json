@@ -1,0 +1,31 @@
+{
+  "title": "IMG_20200308_110454.jpg",
+  "description": "",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1583694374",
+    "formatted": "Mar 8, 2020, 7:06:14 PM UTC"
+  },
+  "modificationTime": {
+    "timestamp": "1585481193",
+    "formatted": "Mar 29, 2020, 11:26:33 AM UTC"
+  },
+  "geoData": {
+    "latitude": 53.33007777777778,
+    "longitude": -6.344986111111111,
+    "altitude": 97.4,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 53.33007777777778,
+    "longitude": -6.344986111111111,
+    "altitude": 97.4,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "photoTakenTime": {
+    "timestamp": "1583665496",
+    "formatted": "Mar 8, 2020, 11:04:56 AM UTC"
+  }
+}

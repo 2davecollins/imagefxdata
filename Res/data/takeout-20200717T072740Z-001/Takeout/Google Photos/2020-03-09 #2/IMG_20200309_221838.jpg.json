@@ -1,0 +1,31 @@
+{
+  "title": "IMG_20200309_221838.jpg",
+  "description": "",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1583793664",
+    "formatted": "Mar 9, 2020, 10:41:04 PM UTC"
+  },
+  "modificationTime": {
+    "timestamp": "1584156101",
+    "formatted": "Mar 14, 2020, 3:21:41 AM UTC"
+  },
+  "geoData": {
+    "latitude": 53.346786111111115,
+    "longitude": -6.2469777777777775,
+    "altitude": 60.09,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 53.346786111111115,
+    "longitude": -6.2469777777777775,
+    "altitude": 60.09,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "photoTakenTime": {
+    "timestamp": "1583792323",
+    "formatted": "Mar 9, 2020, 10:18:43 PM UTC"
+  }
+}

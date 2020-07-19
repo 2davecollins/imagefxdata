@@ -1,0 +1,31 @@
+{
+  "title": "2020-02-29.jpg",
+  "description": "",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1582963851",
+    "formatted": "Feb 29, 2020, 8:10:51 AM UTC"
+  },
+  "modificationTime": {
+    "timestamp": "1584668892",
+    "formatted": "Mar 20, 2020, 1:48:12 AM UTC"
+  },
+  "geoData": {
+    "latitude": 53.3194588,
+    "longitude": -6.3091965,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 53.319813888888895,
+    "longitude": -6.309580555555556,
+    "altitude": 101.29,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "photoTakenTime": {
+    "timestamp": "1582963670",
+    "formatted": "Feb 29, 2020, 8:07:50 AM UTC"
+  }
+}

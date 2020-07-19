@@ -1,0 +1,12 @@
+IMG_20200331_111245
+DateTime: '2020:03:31 11:12:46'
+DateTimeOriginal: '2020:03:31 11:12:46'
+DateTimeDigitized: '2020:03:31 11:12:46'
+PhotographicSensitivity: 60
+ShutterSpeedValue: -833/100 (-8.33)
+ApertureValue: 2
+BrightnessValue: 0
+GPSLatitudeRef: 'N'
+GPSLatitude: 53, 19, 1569/100 (15.69)
+GPSLongitudeRef: 'W'
+GPSLongitude: 6, 19, 219/100 (2.19)

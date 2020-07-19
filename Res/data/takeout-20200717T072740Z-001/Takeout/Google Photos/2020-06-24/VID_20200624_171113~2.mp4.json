@@ -1,0 +1,31 @@
+{
+  "title": "VID_20200624_171113~2.mp4",
+  "description": "",
+  "imageViews": "0",
+  "creationTime": {
+    "timestamp": "1593098547",
+    "formatted": "Jun 25, 2020, 3:22:27 PM UTC"
+  },
+  "modificationTime": {
+    "timestamp": "1593541460",
+    "formatted": "Jun 30, 2020, 6:24:20 PM UTC"
+  },
+  "geoData": {
+    "latitude": 53.4062,
+    "longitude": -6.4234,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "geoDataExif": {
+    "latitude": 53.4062,
+    "longitude": -6.4234,
+    "altitude": 0.0,
+    "latitudeSpan": 0.0,
+    "longitudeSpan": 0.0
+  },
+  "photoTakenTime": {
+    "timestamp": "1593015093",
+    "formatted": "Jun 24, 2020, 4:11:33 PM UTC"
+  }
+}

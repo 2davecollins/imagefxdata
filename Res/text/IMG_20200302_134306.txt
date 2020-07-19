@@ -1,0 +1,12 @@
+IMG_20200302_134306
+DateTime: '2020:03:02 13:43:07'
+DateTimeOriginal: '2020:03:02 13:43:07'
+DateTimeDigitized: '2020:03:02 13:43:07'
+PhotographicSensitivity: 72
+ShutterSpeedValue: -590/100 (-5.9)
+ApertureValue: 2
+BrightnessValue: 0
+GPSLatitudeRef: 'N'
+GPSLatitude: 53, 20, 4263/100 (42.63)
+GPSLongitudeRef: 'W'
+GPSLongitude: 6, 13, 5211/100 (52.11)
