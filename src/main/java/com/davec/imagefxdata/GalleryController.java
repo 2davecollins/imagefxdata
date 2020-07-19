@@ -52,7 +52,6 @@ public class GalleryController implements Initializable {
     private String[] pathnames;
     private int index;
     private String name;
-  
 
     @FXML
     private void switchToNext() throws IOException {
@@ -113,18 +112,16 @@ public class GalleryController implements Initializable {
             img_holder.setFitHeight(455);
             img_holder.setFitWidth(500);
 
-            //Setting the preserve ratio of the image view 
-            //image3.setPreserveRatio(true);
         } catch (FileNotFoundException ex) {
-            System.out.println("Error " + ex);
-            //Logger.getLogger(ThirdController.class.getName()).log(Level.SEVERE, null, ex);
+            gal_error.setText("Ooooops something went wrong |");
+        } catch (SecurityException ex) {
+            gal_error.setText("Are you a Hacker ???????");
         }
-
     }
 
     public void initData(String s, int x) {
         System.out.println("init");
-       // gal_error.setText(s);
+        // gal_error.setText(s);
         index = x;
         setImage(imageList.get(index));
         gal_title.setText(imageList.get(index));
@@ -133,25 +130,22 @@ public class GalleryController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        System.out.println("tc initialize");
 
-        index = 0;
         try {
             File f = new File("Res/images/");
             pathnames = f.list();
 
         } catch (Exception e) {
-            System.out.println("ex" + e);
+            gal_error.setText("That is a problem working on it....");
         } finally {
             imageList.clear();
             for (String pathname : pathnames) {
                 imageList.add(pathname);
             }
         }
-        //imageList.add("IMG_20200228_133520.jpg");
-
         setImage(imageList.get(index));
         gal_title.setText(imageList.get(index));
+        gal_error.setText("");
     }
 
 }

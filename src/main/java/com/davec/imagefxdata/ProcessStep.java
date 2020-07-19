@@ -25,13 +25,14 @@ import org.apache.commons.imaging.ImageReadException;
  */
 public class ProcessStep extends Observable implements Runnable {
 
-    private static final Lock lock = new ReentrantLock();
-    private static final Condition condition = lock.newCondition();
+    private static final Object lock = new Object();
     private static int time = 0;
     private final int step;
     private final String threadName;
     private final ArrayList<String> detail;
-    private long startTime;   
+    private volatile long startTime;
+    private volatile long endTime;
+    private volatile long elapsedTime;
 
     public ProcessStep(int step, String threadName) {
         this.step = step;
@@ -39,41 +40,44 @@ public class ProcessStep extends Observable implements Runnable {
         System.out.println("Creating " + step + " threadName " + threadName);
         detail = new ArrayList<String>();
     }
+
     @Override
     @SuppressWarnings("empty-statement")
     public void run() {
-        lock.lock();
+        //  lock.lock();
         startTime = System.nanoTime();
-        System.out.println("Running thread  ... :" );
+        System.out.println("Running thread  ... :");
+
         try {
-            while (time != step) {
-                System.out.println("Waiting........");
-                condition.await();
-            }
-            // Perform operations
-            String[] pathnames;
-            File f = new File("Res/images/");
-            pathnames = f.list();
-            File file;
-            for (String pathname : pathnames) {
-                System.out.println(pathname);
-                file = new File("Res/images/" + pathname.trim());
-                try {
-                    MetadataExample.metadataExample(file);
-                } catch (ImageReadException ex) {
-                    Logger.getLogger(DetailController.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (IOException ex) {
-                    Logger.getLogger(ProcessStep.class.getName()).log(Level.SEVERE, null, ex);
+            synchronized (lock) {
+                while (time != step) {
+                    lock.wait();
                 }
+
+                String[] pathnames;
+                File f = new File("Res/images/");
+                pathnames = f.list();
+                File file;
+                for (String pathname : pathnames) {
+                    System.out.println(pathname);
+                    file = new File("Res/images/" + pathname.trim());
+                    try {
+                        MetadataExample.metadataExample(file);
+                    } catch (ImageReadException ex) {
+                        Logger.getLogger(DetailController.class.getName()).log(Level.SEVERE, null, ex);
+                    } catch (IOException ex) {
+                        Logger.getLogger(ProcessStep.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                time++;
+                lock.notifyAll(); // Use notifyAll() instead of notify()
+                endTime = System.nanoTime();
+                elapsedTime = endTime - startTime;
+
+                System.out.println("Running Finish   :" + elapsedTime + " nano seconds");
             }
-            time++;
-            condition.signalAll();                    
-            System.out.println("Running Finish   :" + (System.nanoTime()-startTime)+" nano seconds");
         } catch (InterruptedException ie) {
             Thread.currentThread().interrupt(); // Reset interrupted status
-        } finally {
-            System.out.println("Thread Finished");
-            lock.unlock();
         }
     }
 }

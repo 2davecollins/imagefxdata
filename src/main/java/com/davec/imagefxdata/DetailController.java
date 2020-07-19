@@ -39,7 +39,7 @@ public class DetailController implements Initializable {
     public Button btnLogOff;
 
     public int index;
-    private ArrayList<String> dataList = new ArrayList<String>();
+    private final ArrayList<String> dataList = new ArrayList<String>();
     private String[] pathnames;
 
     @FXML
@@ -109,9 +109,7 @@ public class DetailController implements Initializable {
             dl_error.setText("Cant Find Data");
         } finally {
             dataList.clear();
-            for (String pathname : pathnames) {
-                dataList.add(pathname);               
-            }
+            dataList.addAll(Arrays.asList(pathnames));
         }
     }
 
