@@ -35,31 +35,18 @@ public class MetadataExample {
 
     public static void metadataExample(final File file) throws ImageReadException,
             IOException {
-        // get all metadata stored in EXIF format (ie. from JPEG or TIFF).
         final ImageMetadata metadata = Imaging.getMetadata(file);
-//          System.out.println("<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>");
-//  
-//          System.out.println(metadata);
-//          System.out.println(">>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<");
-
         String fileName = FilenameUtils.getBaseName(file.getPath());
         System.out.println("out file " + fileName);
         File fileout = new File("Res/text/" + fileName.trim() + ".txt");
         FileWriter fr = new FileWriter(fileout, false);
-       
+
         BufferedWriter br = new BufferedWriter(fr);
         br.write(fileName + "\n");
 
-//  
         if (metadata instanceof JpegImageMetadata) {
             final JpegImageMetadata jpegMetadata = (JpegImageMetadata) metadata;
 
-//            System.out.println("file: " + file.getPath());
-//
-//            System.out.println("--------------------------------------------");
-
-            // print out various interesting EXIF tags.
-            // printTagValue(jpegMetadata, TiffTagConstants.TIFF_TAG_XRESOLUTION, br);
             printTagValue(jpegMetadata, TiffTagConstants.TIFF_TAG_DATE_TIME, br);
             printTagValue(jpegMetadata,
                     ExifTagConstants.EXIF_TAG_DATE_TIME_ORIGINAL, br);
@@ -78,30 +65,13 @@ public class MetadataExample {
                     GpsTagConstants.GPS_TAG_GPS_LONGITUDE_REF, br);
             printTagValue(jpegMetadata, GpsTagConstants.GPS_TAG_GPS_LONGITUDE, br);
 
-            br.close();
-            fr.close();
+            if (br != null) {
+                br.close();
+                fr.close();
+            }
 
             System.out.println("----------------------------------------------");
 
-            // simple interface to GPS data
-            final TiffImageMetadata exifMetadata = jpegMetadata.getExif();
-            if (null != exifMetadata) {
-                final TiffImageMetadata.GPSInfo gpsInfo = exifMetadata.getGPS();
-                if (null != gpsInfo) {
-                    final String gpsDescription = gpsInfo.toString();
-                    final double longitude = gpsInfo.getLongitudeAsDegreesEast();
-                    final double latitude = gpsInfo.getLatitudeAsDegreesNorth();
-//
-//                    System.out.println("    " + "GPS Description: "
-//                            + gpsDescription);
-//                    System.out.println("    "
-//                            + "GPS Longitude (Degrees East): " + longitude);
-//                    System.out.println("    "
-//                            + "GPS Latitude (Degrees North): " + latitude);
-                }
-            }
-
-            // more specific example of how to manually access GPS values
             final TiffField gpsLatitudeRefField = jpegMetadata.findEXIFValueWithExactMatch(
                     GpsTagConstants.GPS_TAG_GPS_LATITUDE_REF);
             final TiffField gpsLatitudeField = jpegMetadata.findEXIFValueWithExactMatch(
@@ -113,7 +83,6 @@ public class MetadataExample {
             if (gpsLatitudeRefField != null && gpsLatitudeField != null
                     && gpsLongitudeRefField != null
                     && gpsLongitudeField != null) {
-                // all of these values are strings.
                 final String gpsLatitudeRef = (String) gpsLatitudeRefField.getValue();
                 final RationalNumber gpsLatitude[] = (RationalNumber[]) (gpsLatitudeField.getValue());
                 final String gpsLongitudeRef = (String) gpsLongitudeRefField.getValue();
@@ -127,37 +96,12 @@ public class MetadataExample {
                 final RationalNumber gpsLongitudeMinutes = gpsLongitude[1];
                 final RationalNumber gpsLongitudeSeconds = gpsLongitude[2];
 
-                // This will format the gps info like so:
-                //
-                // gpsLatitude: 8 degrees, 40 minutes, 42.2 seconds S
-                // gpsLongitude: 115 degrees, 26 minutes, 21.8 seconds E
-//                System.out.println("    " + "GPS Latitude: "
-//                        + gpsLatitudeDegrees.toDisplayString() + " degrees, "
-//                        + gpsLatitudeMinutes.toDisplayString() + " minutes, "
-//                        + gpsLatitudeSeconds.toDisplayString() + " seconds "
-//                        + gpsLatitudeRef);
-//                System.out.println("    " + "GPS Longitude: "
-//                        + gpsLongitudeDegrees.toDisplayString() + " degrees, "
-//                        + gpsLongitudeMinutes.toDisplayString() + " minutes, "
-//                        + gpsLongitudeSeconds.toDisplayString() + " seconds "
-//                        + gpsLongitudeRef);
-
             }
-
-//            System.out.println();
-
-            final List<ImageMetadataItem> items = jpegMetadata.getItems();
-            for (int i = 0; i < items.size(); i++) {
-                final ImageMetadataItem item;
-                item = items.get(i);
-//                System.out.println("    " + "item: " + item);
-            }
-
-//            System.out.println();
         } else {
-
-            br.close();
-            fr.close();
+            if (br != null) {
+                br.close();
+                fr.close();
+            }
 
         }
     }

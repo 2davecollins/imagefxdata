@@ -86,12 +86,11 @@ public class GalleryController implements Initializable {
     }
 
     public int getIndexFromArrayList(int i) {
-        int a;
-        a = (i > 0 && i < imageList.size()) ? i : 0;
-        gal_title.setText(imageList.get(a));
-        System.out.println("a :" + a + " i " + i);
-        return a;
-
+        int j;
+        j = (i > 0 && i < imageList.size()) ? i : 0;
+        gal_title.setText(imageList.get(j));
+       
+        return j;
     }
 
     public void setText(String msg) {
@@ -100,8 +99,8 @@ public class GalleryController implements Initializable {
         gal_title.setText(msg);
     }
 
-    public void setImage(String name) {
-        FileInputStream input;
+    public void setImage(String name) throws IOException {
+        FileInputStream input = null;
         try {
 
             input = new FileInputStream("Res/images/" + name);
@@ -116,10 +115,14 @@ public class GalleryController implements Initializable {
             gal_error.setText("Ooooops something went wrong |");
         } catch (SecurityException ex) {
             gal_error.setText("Are you a Hacker ???????");
+        } finally {
+            if(input != null){                
+                input.close();
+            }
         }
     }
 
-    public void initData(String s, int x) {
+    public void initData(String s, int x) throws IOException {
         System.out.println("init");
         // gal_error.setText(s);
         index = x;
@@ -132,20 +135,25 @@ public class GalleryController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
 
         try {
-            File f = new File("Res/images/");
-            pathnames = f.list();
-
-        } catch (Exception e) {
-            gal_error.setText("That is a problem working on it....");
-        } finally {
-            imageList.clear();
-            for (String pathname : pathnames) {
-                imageList.add(pathname);
+            
+            try {
+                File f = new File("Res/images/");
+                pathnames = f.list();
+                
+            } catch (Exception e) {
+                gal_error.setText("That is a problem working on it....");
+            } finally {
+                imageList.clear();
+                for (String pathname : pathnames) {
+                    imageList.add(pathname);
+                }
             }
+            setImage(imageList.get(index));
+            gal_title.setText(imageList.get(index));
+            gal_error.setText("");
+        } catch (IOException ex) {
+             gal_error.setText("There was a problem finding photo");
         }
-        setImage(imageList.get(index));
-        gal_title.setText(imageList.get(index));
-        gal_error.setText("");
     }
 
 }

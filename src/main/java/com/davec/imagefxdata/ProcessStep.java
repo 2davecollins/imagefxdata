@@ -38,22 +38,19 @@ public class ProcessStep extends Observable implements Runnable {
         this.step = step;
         this.threadName = threadName;
         System.out.println("Creating " + step + " threadName " + threadName);
-        detail = new ArrayList<String>();
+        detail = new ArrayList<>();
     }
 
     @Override
     @SuppressWarnings("empty-statement")
-    public void run() {
-        //  lock.lock();
+    public void run() {      
         startTime = System.nanoTime();
         System.out.println("Running thread  ... :");
-
         try {
             synchronized (lock) {
                 while (time != step) {
                     lock.wait();
                 }
-
                 String[] pathnames;
                 File f = new File("Res/images/");
                 pathnames = f.list();
@@ -73,7 +70,6 @@ public class ProcessStep extends Observable implements Runnable {
                 lock.notifyAll(); // Use notifyAll() instead of notify()
                 endTime = System.nanoTime();
                 elapsedTime = endTime - startTime;
-
                 System.out.println("Running Finish   :" + elapsedTime + " nano seconds");
             }
         } catch (InterruptedException ie) {

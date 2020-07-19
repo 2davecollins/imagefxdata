@@ -64,6 +64,7 @@ public class LoginController implements Initializable {
                 if (currentLine.trim().equalsIgnoreCase(codeSubmit.trim())) {
                     access = true;
                     currentLine = null;
+                   // br.reset();
                 }
             }
 
@@ -75,7 +76,9 @@ public class LoginController implements Initializable {
             Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
             ps_title.setText("I/O exception");
         } finally {
-            br.close();
+            if(br != null){
+                 br.close();                
+            }           
         }
         return access;
     }

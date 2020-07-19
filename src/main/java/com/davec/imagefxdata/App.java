@@ -1,6 +1,5 @@
 package com.davec.imagefxdata;
 
-
 import java.io.File;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -19,14 +18,24 @@ import javafx.scene.layout.HBox;
 public class App extends Application {
 
     private static Scene scene;
+
     @Override
     public void start(Stage stage) throws IOException {
 
         stage.setTitle("Secure Code CA1");
+        
         int i = 0;
-       
-        Thread t = new Thread(new ProcessStep(0,"folder"+i));
+        Thread t = new Thread(new ProcessStep(i, "images" + i));
         t.start();
+        
+        /*
+        This code could be Modifed to permit extraction from different folders        
+        on different threads and ensure that it happens in a controlled manner
+        
+        for (int i = 4; i >= 0; i--) {
+            new Thread(new ProcessStep(i, "images" + i)).start();
+        }
+         */
         scene = new Scene(loadFXML("login"), 680, 640);
         stage.setScene(scene);
         stage.show();
@@ -46,5 +55,4 @@ public class App extends Application {
         launch();
     }
 
-  
 }
